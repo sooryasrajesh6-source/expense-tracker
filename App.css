@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff3333;
+}
+
+.balance-card {
+  background: #000;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #ff3333;
+}
+
+.balance-card h3 {
+  font-size: 32px;
+  color: #ff3333;
+  margin-top: 10px;
+}
+
+.summary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary div {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.income {
+  background: #1f1f1f;
+  border: 2px solid #00cc66;
+  color: #00cc66;
+}
+
+.expense {
+  background: #1f1f1f;
+  border: 2px solid #ff3333;
+  color: #ff3333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  background: #222;
+  color: white;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #ff3333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+.history-title {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #ff3333;
+}
+
+.history {
+  list-style: none;
+}
+
+.history li {
+  background: #222;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.history li.income {
+  border-left: 5px solid #00cc66;
+}
+
+.history li.expense {
+  border-left: 5px solid #ff3333;
+}
+
+.history li button {
+  background: #ff3333;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.history li button:hover {
+  background: #cc0000;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+}
